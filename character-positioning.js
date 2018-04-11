@@ -1,7 +1,6 @@
 function countLetters(inStr) {
 
   var count = {};
-  //var str = inStr.replace(/\s/g,'');
   var arrayStr = inStr.split("");
 
   for (var i = 0; i < arrayStr.length; i++) {
@@ -11,6 +10,5 @@ function countLetters(inStr) {
   delete count[" "];
   return count;
 }
-console.log(countLetters("          aabbcczz"));
-//console.log(countLetters("lighthouse in the house"));
-//console.log(countLetters("the quick brown fox jumped over the lazy dog"));
+console.log(countLetters("lighthouse in the house"));
+console.log(countLetters("the quick brown fox jumped over the lazy dog"));
